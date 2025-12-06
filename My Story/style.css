@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Light Mode Defaults */
+body {
+    background: #fff;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background: #222;
+    color: #fff;
+    padding: 15px 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Dark Mode Toggle Button */
+#darkToggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #00bcd4, #009688);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero .btn {
+    background: #fff;
+    color: #009688;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Projects */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #009688;
+    text-decoration: none;
+}
+
+/* Contact */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background: #009688;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form button:hover {
+    background: #00796b;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background: #121212;
+    color: #e0e0e0;
+}
+body.dark header {
+    background: #111;
+}
+body.dark .nav-links a {
+    color: #e0e0e0;
+}
+body.dark .hero {
+    background: linear-gradient(to right, #333, #111);
+}
+body.dark .project-card {
+    background: #1e1e1e;
+}
+body.dark form input, 
+body.dark form textarea {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
